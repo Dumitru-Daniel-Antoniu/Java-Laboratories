@@ -1,1 +1,29 @@
+package com.mycompany.laboratory1;
 
+public class Laboratory1 {
+    public static void main(String[] args) {
+        Laboratory1 lab1 = new Laboratory1();
+        lab1.compulsory();
+        System.out.println("Hello World!");
+    }
+    void compulsory() {
+        String languages[] = {"C","C++","C#","Python","Go","Rust","JavaScript","PHP","Swift","Java"};
+        int n = (int) (Math.random() * 1_000_000);
+        n = n * 3;
+        n = n + 10101;
+        n = n + 0xFF;
+        n = n * 6;
+        int sum = 0;
+        int sum1 = n;
+        while(sum1 >= 10){
+            sum = 0;
+            while(n != 0) {
+                sum = sum + n % 10;
+                n = n / 10;
+            }
+            sum1 = sum;
+            n = sum1;
+        }
+        System.out.println("Willy-nilly, this semester I will learn " + languages[sum]);
+    }
+}
