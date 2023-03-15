@@ -10,6 +10,9 @@ public class Laboratory2 {
         c2.setY(30.5);
         System.out.println(c2);
         Road r1 = new Express("D24",c1,c2);
+        Road r2 = new Express("D24",c1,c2);
         System.out.println(r1);
+        System.out.println(c1.equals(c2));
+        System.out.println(r1.equals(r2));
     }
 }

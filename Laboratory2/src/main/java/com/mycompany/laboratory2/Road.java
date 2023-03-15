@@ -62,27 +62,3 @@ public abstract class Road {
         return name.equals(other.name);
     }  
 }
-class Highway extends Road {
-    public Highway() {}
-    public Highway(String name, Location a, Location b) {
-        this.name=name;
-        this.a=a;
-        this.b=b;
-    }
-}
-class Express extends Road {
-    public Express() {}
-    public Express(String name, Location a, Location b) {
-        this.name=name;
-        this.a=a;
-        this.b=b;
-    }
-}
-class Country extends Road {
-    public Country() {}
-    public Country(String name, Location a, Location b) {
-        this.name=name;
-        this.a=a;
-        this.b=b;
-    }
-}
