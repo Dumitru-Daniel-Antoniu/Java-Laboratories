@@ -1,0 +1,12 @@
+com\mycompany\homeworklaboratory5\CommandClass.class
+com\mycompany\homeworklaboratory5\ListCommand.class
+com\mycompany\homeworklaboratory5\SaveCommand.class
+com\mycompany\homeworklaboratory5\AddCommand.class
+com\mycompany\homeworklaboratory5\ToStringCommand.class
+com\mycompany\homeworklaboratory5\InvalidCatalogException.class
+com\mycompany\homeworklaboratory5\ReportCommand.class
+com\mycompany\homeworklaboratory5\HomeworkLaboratory5.class
+com\mycompany\homeworklaboratory5\LoadCommand.class
+com\mycompany\homeworklaboratory5\Document.class
+com\mycompany\homeworklaboratory5\Catalog.class
+com\mycompany\homeworklaboratory5\ViewCommand.class

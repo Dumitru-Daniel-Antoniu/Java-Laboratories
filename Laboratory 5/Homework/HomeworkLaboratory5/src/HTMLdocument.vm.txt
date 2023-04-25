@@ -1,0 +1,15 @@
+<html>
+  <body>
+  <ol>
+  #foreach($document in $docs)
+    <li>
+        <p> Name : $document.getName() </p>
+        <ul>
+            <li><p> ID : $document.getId() </p></li>
+            <li><p> Location : $document.getLocation() </p></li>
+        </ul>
+    </li>
+  #end
+  </ol>
+  </body>
+</html>
