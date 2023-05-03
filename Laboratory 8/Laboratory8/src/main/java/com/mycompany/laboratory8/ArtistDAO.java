@@ -22,7 +22,7 @@ public class ArtistDAO {
         Connection connection = Database.getConnection();
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery("select Name from Artists where Id='" + id + "'")) {
-            return resultSet.next() ? resultSet.getString(2) : null;
+            return resultSet.next() ? resultSet.getString(1) : null;
         }
     }
 }

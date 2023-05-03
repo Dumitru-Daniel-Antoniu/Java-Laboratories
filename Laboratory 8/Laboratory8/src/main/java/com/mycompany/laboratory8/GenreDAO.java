@@ -1,13 +1,28 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.laboratory8;
 
-/**
- *
- * @author wwwdd
- */
+import java.sql.*;
+
 public class GenreDAO {
-    
+    public void create(int id, String name) throws SQLException, ClassNotFoundException {
+        Connection connection = Database.getConnection();
+        try(PreparedStatement preparedStatement = connection.prepareStatement("insert into genres values (?, ?)")) {
+            preparedStatement.setInt(1, id);
+            preparedStatement.setString(2, name);
+            preparedStatement.executeUpdate();
+        }
+    }
+    public Integer findByName(String name) throws SQLException, ClassNotFoundException {
+        Connection connection = Database.getConnection();
+        try(Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select id from genres where name='" + name + "'")) {
+            return resultSet.next() ? resultSet.getInt(1) : null;
+        }
+    }
+    public String findById(int id) throws SQLException, ClassNotFoundException {
+        Connection connection = Database.getConnection();
+        try(Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select name from genres where id='" + id + "'")) {
+            return resultSet.next() ? resultSet.getString(1) : null;
+        }
+    }
 }

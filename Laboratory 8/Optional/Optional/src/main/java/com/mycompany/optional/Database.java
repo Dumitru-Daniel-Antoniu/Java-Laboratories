@@ -1,6 +1,7 @@
-package com.mycompany.laboratory8;
-
+package com.mycompany.optional;
+  
 import java.sql.*;
+//import com.mchange.v2.c3p0.*;
 
 public class Database {
     private static final String URL = "jdbc:postgresql://localhost:5432/albums";
