@@ -1,9 +1,9 @@
-package com.mycompany.optional;
+package org.example;
 
 public class Album {
     private int id;
     private int releaseYear;
-    private String title;
+    private String title = new String();
     private String artist;
     private String genre;
 

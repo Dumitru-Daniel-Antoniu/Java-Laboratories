@@ -1,4 +1,4 @@
-package com.mycompany.optional;
+package org.example;
 
 public class Genre {
     private int id;

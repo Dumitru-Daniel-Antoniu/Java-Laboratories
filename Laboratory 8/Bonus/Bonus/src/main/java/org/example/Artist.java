@@ -1,12 +1,12 @@
-package com.mycompany.optional;
+package org.example;
 
-public class Genre {
+public class Artist {
     private int id;
     private String name;
 
-    public Genre() {}
+    public Artist() {}
 
-    public Genre(int id, String name) {
+    public Artist(int id, String name) {
         this.id = id;
         this.name = name;
     }

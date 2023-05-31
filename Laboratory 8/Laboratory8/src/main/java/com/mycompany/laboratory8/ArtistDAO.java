@@ -18,7 +18,7 @@ public class ArtistDAO {
             return resultSet.next() ? resultSet.getInt(1) : null;
         }
     }
-    public String findById(int id) throws SQLException, ClassNotFoundException {
+    public Genre findById(int id) throws SQLException, ClassNotFoundException {
         Connection connection = Database.getConnection();
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery("select Name from Artists where Id='" + id + "'")) {
