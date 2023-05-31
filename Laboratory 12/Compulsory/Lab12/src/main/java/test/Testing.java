@@ -1,6 +1,7 @@
 package test;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Testing {
     private static int number;
@@ -26,6 +27,7 @@ public class Testing {
     public static void setName(String name) {
         Testing.name = name;
     }
+
     @Test
     public static int getAge() {
         return age;
@@ -34,5 +36,6 @@ public class Testing {
     public static void setAge(int age) {
         Testing.age = age;
     }
+
 }
 
